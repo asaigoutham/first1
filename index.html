@@ -1,38 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        function validateForm() {
-  let x = document.forms["myForm"]["fname"].value;
-  let y= document.forms["myForm"]["password"].value;
-  let z = document.forms["myForm"]["mail"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-  if(y==""){
-      alert("password must be filled out");
-      return false;
-  }
-  if(z==""){
-      alert("email must be filled out");
-      return false;
-  }
-  
-}
-    </script>
-    <title>Form validation</title>
-</head>
-<body>
-    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-        Name: <input type="text" name="fname">
-        password:<input type="password" name="password">
-        email: <input type="email" name="mail">
-        <input type="submit" value="Submit">
-      </form>
-    <marquee>this</marquee>
-</body>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <center>
+            <form>
+                <b>LOGIN</b> <br>
+                <label>Username: </label>
+                <input type="text" name="text"><br>
+                <label>Password: </label>
+                <input type="password" name="password"><br>
+                <button>Login</button>
+                <input type="reset" name="reset"><br>
+                Not a User <a href="Register.html" target="_blank">&lt;REGISTER&gt;</a>
+            </form>
+        </center>
+    </body>
 </html>
